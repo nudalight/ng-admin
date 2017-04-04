@@ -1,0 +1,21 @@
+doctype html
+html(
+	ng-app='steel'
+	ng-controller='mainController'
+	ng-strict-di
+)
+	head
+		meta(charset='utf-8')
+		title Home
+
+		link(rel='stylesheet', href='css/vendor.min.css')
+		link(rel='stylesheet', href='css/output.min.css')
+
+	body
+		include admin-intf/header.pug
+
+		.ng-view
+
+		script(src='js/vendor.min.js')
+		script.
+			System.import('../scripts/main');
